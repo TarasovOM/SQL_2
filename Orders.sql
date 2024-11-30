@@ -1,0 +1,7 @@
+CREATE TABLE NETOLOGY.ORDERS (
+	ID SERIAL PRIMARY KEY,
+	DATE DATE,
+	CustomerId INTEGER REFERENCES netology.customers (Id),
+	product_name VARCHAR(255),
+	amount INT
+);
